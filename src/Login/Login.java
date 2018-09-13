@@ -1,4 +1,4 @@
-package sample;
+package Login;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;
@@ -19,7 +19,7 @@ import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 
 
-public class Main extends Application {
+public class Login extends Application {
 
   public static void main(String[] args) {
     launch(args);
@@ -71,6 +71,9 @@ public class Main extends Application {
 
     Scene scene = new Scene(grid, 300, 275);
     primaryStage.setScene(scene);
+
+    scene.getStylesheets().add
+        (Login.class.getResource("Login.css").toExternalForm());
 
     primaryStage.show();
   }
